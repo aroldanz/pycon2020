@@ -1,3 +1,4 @@
-from fluidasserts.sca import npm
+import sys
+from fluidasserts.lang import python
 
-npm.project_has_vulnerabilities('npm_project')
+python.has_generic_exceptions(sys.modules['fluidasserts'].__path__[0])

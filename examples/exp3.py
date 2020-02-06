@@ -1,4 +1,20 @@
-import sys
-from fluidasserts.lang import python
+from fluidasserts.proto import ssl
 
-python.has_generic_exceptions(sys.modules['fluidasserts'].__path__[0])
+ssl.is_pfs_disabled('fluidattacks.com')
+ssl.is_sslv3_enabled('fluidattacks.com')
+ssl.is_tlsv1_enabled('fluidattacks.com')
+ssl.is_tlsv11_enabled('fluidattacks.com')
+ssl.has_poodle_tls('fluidattacks.com')
+ssl.has_poodle_sslv3('fluidattacks.com')
+ssl.has_breach('fluidattacks.com')
+ssl.allows_anon_ciphers('fluidattacks.com')
+ssl.allows_weak_ciphers('fluidattacks.com')
+ssl.has_beast('fluidattacks.com')
+ssl.has_heartbleed('fluidattacks.com')
+ssl.allows_modified_mac('fluidattacks.com')
+ssl.not_tls13_enabled('fluidattacks.com')
+ssl.allows_insecure_downgrade('fluidattacks.com')
+ssl.tls_uses_cbc('fluidattacks.com')
+ssl.has_sweet32('fluidattacks.com')
+ssl.has_tls13_downgrade_vuln('fluidattacks.com')
+ssl.has_freak('fluidattacks.com')
