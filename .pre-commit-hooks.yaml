@@ -1,5 +1,5 @@
 - id: asserts-docker
   name: Running Asserts on the code
   description: Run Asserts to perform SAST
-  entry: -v /home/aroldan/pycon2020:/code fluidattacks/asserts:latest /code/asserts.sh
+  entry: fluidattacks/asserts asserts
   language: docker_image
