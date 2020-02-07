@@ -1,5 +1,5 @@
 - id: asserts-docker
   name: Running Asserts on the code
   description: Run Asserts to perform SAST
-  entry: fluidattacks/asserts asserts
+  entry: -v $PWD:/code fluidattacks/asserts /code/asserts.sh
   language: docker_image

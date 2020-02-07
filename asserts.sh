@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-asserts --lang .
+asserts --lang $1
