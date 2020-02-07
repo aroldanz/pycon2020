@@ -1,0 +1,5 @@
+repos:
+-   repo: https://github.com/aroldanz/pycon2020 
+    rev: master
+    hooks:
+    -   id: asserts-docker 
